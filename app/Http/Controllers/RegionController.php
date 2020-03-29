@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Region;
 use App\Models\RegionIncident;
+use App\OfficialStat;
 use Illuminate\Http\Request;
 
 class RegionController extends Controller
@@ -21,5 +22,12 @@ class RegionController extends Controller
 
 
         return $regions;
+    }
+
+    public function getAllStats()
+    {
+        $stats = OfficialStat::whereDate('date', now())->orderBy('group')->groupBy()->get();
+
+        return $stats;
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRegionsTable extends Migration
+class CreateOfficialStatsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateRegionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('regions', function (Blueprint $table) {
+        Schema::create('official_stats', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->boolean('is_region')->default('0');
-            $table->boolean('is_province')->default('0');
-            $table->integer('dagi_id');
+            $table->string('label');
+            $table->integer('value');
+            $table->integer('group');
+            $table->date('date');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateRegionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('regions');
+        Schema::dropIfExists('official_stats');
     }
 }
