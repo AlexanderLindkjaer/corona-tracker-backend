@@ -26,7 +26,15 @@ class RegionController extends Controller
 
     public function getAllStats()
     {
-        $stats = OfficialStat::whereDate('date', now())->orderBy('group')->groupBy()->get();
+        $date = now();
+
+        if(!OfficialStat::whereDate('date', now())->first()){
+
+            $date->subDay();
+        }
+
+
+        $stats = OfficialStat::whereDate('date', $date)->orderBy('group')->groupBy()->get();
 
         return $stats;
     }
