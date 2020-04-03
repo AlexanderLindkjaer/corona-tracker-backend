@@ -61,6 +61,7 @@ class CalculateWeight extends Command
 
     private function calcWeight($incidents)
     {
+        if(count($incidents) === 0) return;
 
         $max = $incidents[0]->confirmed_cases;
 
