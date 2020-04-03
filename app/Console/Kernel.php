@@ -24,7 +24,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('run:scraper')->daily()->at('13:10');
+        $schedule->command('run:scraper')->daily()->at('13:05');
+        $schedule->command('netlify:build')->daily()->at('13:10');
+        $schedule->command('netlify:build')->daily()->at('17:10');
         $schedule->command('run:scraper')->cron('0 */3 * * *') ->between('8:00', '22:00');
     }
 

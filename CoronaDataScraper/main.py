@@ -95,7 +95,7 @@ def getOfficialStats():
     #api = 'http://api.coronatracker.test/api/upload-stats'
     api = 'https://api.coronatracker.dk/api/upload-stats'
 
-    r = requests.post(url=api, json=dict)
+    r = requests.post(url=api, json=sortedDict)
 
     print(r.status_code)
     print(r.text)
