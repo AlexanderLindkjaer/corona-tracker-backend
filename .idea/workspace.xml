@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b5b83ab-fa21-49aa-98cd-e8f14cc25b1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CoronaDataScraper/runMain.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoronaDataScraper/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoronaDataScraper/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoronaDataScraper/runMain.sh" beforeDir="false" afterPath="$PROJECT_DIR$/CoronaDataScraper/runMain.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,17 +39,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CoronaDataScraper/runMain.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="105">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/OfficialStat.php">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/RunScaper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+            <state relative-caret-position="439">
+              <caret line="39" column="10" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -137,6 +135,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/RegionController.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/CalculateWeight.php" />
         <option value="$PROJECT_DIR$/CoronaDataScraper/main.py" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/RunScaper.php" />
         <option value="$PROJECT_DIR$/CoronaDataScraper/runMain.sh" />
       </list>
     </option>
@@ -347,16 +346,15 @@
       <workItem from="1585595721598" duration="536000" />
       <workItem from="1585624063390" duration="105000" />
       <workItem from="1585648259951" duration="21000" />
-      <workItem from="1585924842960" duration="2733000" />
+      <workItem from="1585924842960" duration="2923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13026000" />
+    <option name="totallyTimeSpent" value="13216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-240" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20277481" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -519,10 +517,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/RunScaper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CoronaDataScraper/runMain.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="105">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
         </state>
       </provider>
     </entry>
