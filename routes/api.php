@@ -23,6 +23,7 @@ Route::get('/official/stats', 'RegionController@getAllStats');
 
 
 Route::post('/upload-region-incidents', 'RegionController@uploadRegionData');
+Route::post('/upload-stats', 'RegionController@uploadOfficialStats');
 
 
 

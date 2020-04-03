@@ -61,4 +61,28 @@ class RegionController extends Controller
 
         Artisan::call('calc:weight');
     }
+
+    public function uploadOfficialStats(Request $request)
+    {
+        $today = now();
+
+        foreach ($request->all() as $key => $value) {
+            $data = [
+                'label' => $key,
+                'value' => $value,
+                'date' => now(),
+                'group' => 1
+            ];
+
+            $existing = OfficialStat::where('label', $key)->where('date', now()->format('Y-m-d'))->first();
+
+            if($existing){
+                $existing->update($data);
+                continue;
+            }
+
+            OfficialStat::create($data);
+
+        }
+    }
 }
