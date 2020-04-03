@@ -30,7 +30,10 @@ def getRegionIncidents():
         dict[row[0]['text']] = {'confirmed_cases': row[1]['text'], 'population': row[2]['text'],
                                 'cumulative_incidence': row[3]['text']}
 
-    r = requests.post(url='http://api.coronatracker.test/api/upload-region-incidents', json=dict)
+    #api = 'http://api.coronatracker.test/api/upload-region-incidents'
+    api = 'https://api.coronatracker.dk/api/upload-region-incidents'
+
+    r = requests.post(url=api, json=dict)
 
     print(r.status_code)
 
