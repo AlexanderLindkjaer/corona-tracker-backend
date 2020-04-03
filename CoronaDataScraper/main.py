@@ -36,6 +36,7 @@ def getRegionIncidents():
     r = requests.post(url=api, json=dict)
 
     print(r.status_code)
+    print(r.text
 
 if __name__ == '__main__':
     getRegionIncidents()
