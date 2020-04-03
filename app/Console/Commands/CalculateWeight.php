@@ -44,14 +44,14 @@ class CalculateWeight extends Command
         $regions = RegionIncident::whereHas('region', function ($q) {
             $q->where('is_region', true);
         })
-            ->where('created_at', '>=', $midnight)
+            ->where('updated_at', '>=', $midnight)
             ->orderBy('confirmed_cases', 'desc')
             ->get();
 
         $provinces = RegionIncident::whereHas('region', function ($q) {
             $q->where('is_province', true);
         })
-            ->where('created_at', '>=', $midnight)
+            ->where('updated_at', '>=', $midnight)
             ->orderBy('confirmed_cases', 'desc')
             ->get();
 
@@ -61,6 +61,7 @@ class CalculateWeight extends Command
 
     private function calcWeight($incidents)
     {
+
         $max = $incidents[0]->confirmed_cases;
 
         foreach ($incidents as $incident) {

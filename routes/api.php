@@ -20,3 +20,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/official/regions', 'RegionController@getAllRegions');
 Route::get('/official/stats', 'RegionController@getAllStats');
+
+
+Route::post('/upload-region-incidents', 'RegionController@uploadRegionData');
+
+
+
+
