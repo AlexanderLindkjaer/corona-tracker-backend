@@ -9,7 +9,7 @@ def getRegionIncidents():
         'https://www.ssi.dk/aktuelt/sygdomsudbrud/coronavirus/covid-19-i-danmark-epidemiologisk-overvaagningsrapport').text,
                          'html.parser')
     links = soup.blockquote.find_all('a')
-    link = links[1].get('href')
+    link = links[0].get('href')
 
     head, sep, tail = link.partition('?')
 
